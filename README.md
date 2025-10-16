@@ -1,2 +1,4 @@
 # Naive-Bayes-Classifier
 A compact, didactic implementation of a Bernoulli Naive Bayes classifier that predicts a movie’s genre from simple binary attributes (e.g., “contains_humor”, “is_futuristic”). The script is intentionally minimal to foreground core concepts: feature encoding, model training, and single-example inference.
+
+This asset operationalizes an end-to-end text-book pipeline—define features → label classes → train → predict → decode label—with zero ceremony. It leverages scikit-learn’s BernoulliNB to model presence/absence signals across 12 boolean descriptors and returns one of five coarse-grained genres. It is engineered for learning agility, code walk-throughs, and as a baseline scaffold you can harden into a production-adjacent classifier by adding data, evaluation, and persistence
