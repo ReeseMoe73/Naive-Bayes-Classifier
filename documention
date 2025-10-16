@@ -1,0 +1,50 @@
+The executable outlines a Naive Bayes classification paired with a Bernoulli model. It is 
+
+like a movie critic predicting a new movie's genre- a process that, while not always accurate, is 
+
+predictable and can be refined with more data. The executable is paired with scikit-learn and 
+
+Bernoulli as imported modules. 
+ 
+The first step is defining the movie's features. I have kept it simple with twelve binary 
+
+features, each asking a straightforward question that can be answered with a yes or no. These 
+
+questions cover a range of aspects, from the presence of humor to the intensity of the movie. 
+
+The classifier contains five classes: Comedy, Science Fiction, Horror, Action, and Drama. 
+
+In each of the features along the X axis of the class containing a characteristic of that feature, a 
+
+number one is assigned if the movie has that feature; if not, a zero is assigned. For instance, if the 
+movie contains humor, one is assigned; if not, a zero is assigned. One equals Yes, and zero 
+
+equals no.  
+ 
+For example, in the comedy class, the feature asks if the movie contains humor. The 
+
+answer is 'yes,' and one is designated.
+
+The genres are assigned a label 1-5, five equals comedy, 4= science fiction, 3 = horror, 2 
+=action 1= drama   
+
+1) Features & Deliverables
+
+Binary feature model (12 boolean inputs reflecting tone, pace, content).
+
+Five-class classifier: Comedy, Sci-Fi, Horror, Action, Drama.
+
+One-shot prediction with label→name decoding.
+
+Zero external assets required; all data are embedded in-script for simplicity. 
+
+Naive Bayes Classifier
+
+2) System Requirements
+
+Python 3.8+
+
+Libraries: scikit-learn
+
+
+Execute:  python "Naive Bayes Classifier.py"
